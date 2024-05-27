@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: satoshi;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 1rem;
+}
+
+#bts-logo {
+    display: flex;
+    align-self: flex-start;
+    width: 50px;
+    height: 50px;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0 2rem 0 0;
+}
