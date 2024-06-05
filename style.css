@@ -1,34 +1,199 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 1;
+    padding: 1;
     box-sizing: border-box;
-    font-family: satoshi;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #000000;
-    padding: 1rem;
-}
-
+    justify-content: center;
+  }
+  body {
+    font-family: satoshi;
+  }
 #bts-logo {
     display: flex;
     align-self: flex-start;
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+    border-radius: 15%;
 }
-
-ul a {
-    color: white;
+  a {
     text-decoration: none;
-
-}
-
-ul {
+  }
+  ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  .landing-page header {
+    min-height: 80px;
     display: flex;
-    gap: 15px;
-    padding: 0 2rem 0 0;
-}
+  }
+  @media (max-width: 767px) {
+    .landing-page header {
+      min-height: auto;
+      display: initial;
+    }
+  }
+  .landing-page header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .landing-page header .logo {
+    color: #000000;
+    font-style: satoshi;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .landing-page header .links {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .links {
+      text-align: center;
+      gap: 10px;
+    }
+  }
+  .landing-page header .links li {
+    margin-left: 30px;
+    color: #000000;
+    cursor: pointer;
+    transition: .3s;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .links li {
+      margin-left: auto;
+    }
+  }
+  .landing-page header .links li:last-child {
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #b37eb5;
+  }
+  .landing-page header .links li:not(:last-child):hover {
+    color: #000000;
+  }
+  .landing-page .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 140px;
+    min-height: calc(100vh - 80px);
+  }
+  @media (max-width: 767px) {
+    .landing-page .content .container {
+      gap: 0;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+  }
+  @media (max-width: 767px) {
+    .landing-page .content .info {
+      text-align: center;
+      margin-bottom: 15px 
+    }
+  }
+  .landing-page .content .info h1 {
+    color: #000000;
+    font-size: 44px;
+  }
+  .landing-page .content .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #343434;
+  }
+  .landing-page .content .info button.btn-vende {
+    border: 2px solid #b37eb5;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #b37eb5;
+  }
+  .landing-page .content .info button.btn-vende:hover {
+    background: #b37eb5;
+    color: #FFF;
+  }
+  .landing-page .content .info button.btn-compra {
+    border: 2px solid #b37eb5;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #b37eb5;;
+  }
+  .landing-page .content .info button.btn-compra:hover {
+    background: #b37eb5;;
+    color: #FFF;
+  }
+  .landing-page .content .img.image-hero {
+    max-width: 100%;
+  }
+  .about-us-title{
+    padding-left: 7em;
+    padding-right: 10em;
+    margin-left: 5em ;
+    margin-right: 10em;
+  }
+  .about-us-title {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  
+  #about-us-title h2 {
+    font-size: 32px;
+    font-weight: 800;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .about-us-text {
+    padding-left: 7em;
+  }
